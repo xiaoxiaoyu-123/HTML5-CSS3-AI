@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音视频标签</title>
+</head>
+
+<body>
+    <h2>视频标签</h2>
+    <!-- 在h5中如果属性和值相同，则可以省略属性值,controls属性表示显示播放控件 -->
+    <video src="./media/yu7.mp4 " controls width="400px"></video>
+
+    <!-- 自动播放:autoplay -->
+    <video src="./media/yu7.mp4 " controls width="400px" autoplay muted></video>
+
+    <!-- 循环播放属性：loop -->
+    <video src="./media/yu7.mp4 " controls width="400px" loop></video>
+
+    <!-- 静音属性：muted -->
+    <video src="./media/yu7.mp4 " controls width="400px" muted></video>
+
+    <!-- 预览图像属性：poster -->
+    <video src="./media/yu7.mp4 " controls width="400px" poster="./media/yu7.jpg"></video>
+
+    <!-- 视频标签兼容性写法 -->
+    <!-- <video controls>
+        <source src="video.webm" type="video/webm">
+        <source src="video.ogg" type="video/ogg">
+        <source src="video.mp4" type="video/mp4"> -->
+    <!-- 提示文本 -->
+    <!-- <p>您的浏览器不支持HTML5的Video 标签，请升级浏览器。</p> -->
+    <!-- 
+        1.将src元素放在几个单独的<source>元素当中，这些元素分别指向各自的资源
+        2.浏览器会检查<source>元素，并且播放第一个与其自身相匹配的媒体。
+        3.每个source元素都含有type属性，浏览器也会通过检查这个属性来迅速的跳过那些不支持的格式。如果你没有添加type属性，浏览器会尝试加载每一个文件，直到找到一个能正确播放的格式，但是这样会消耗更多的时间和资源。 -->
+
+
+
+    <h2>音频标签</h2>
+    <!-- 音频标签浏览器不让自动播放 后续可用js实现 ，基础属性写法与视频标签相同 -->
+    <audio src="./media/ldh.mp3" controls autoplay muted loop></audio>
+    <!-- 兼容性写法 -->
+    <audio controls>
+        <source src="./media/ldh.mp3" type="audio/mp3">
+        <p>您的浏览器不支持音频播放</p>
+    </audio>
+
+
+
+    </video>
+
+
+</body>
+
+</html>
