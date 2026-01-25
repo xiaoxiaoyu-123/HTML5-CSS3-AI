@@ -11,7 +11,22 @@
 
     <!-- 表单容器：主要作用是包裹所有的表单控件 -->
     <form action="">
+        <!-- 表单控件input,1.单行文本框和密码框：type="text"和type="password" 
+            placeholder:提示信息
+            maxlength:允许的最大字符数
+            accesskey:使元素获得焦点的快捷键
+            autocomplete:用于表单的自动填充行为，帮助浏览器决定是否根据用户历史输入自动填充字段值，取值on/off
+        -->
+        <ul>
+            <li>
+                账号：<input type="text" placeholder="请输入账号" name="username" accesskey="s" autocomplete="off">
+            </li>
+            <li>
+                密码：<input type="password" placeholder="请输入密码" name="password" maxlength="6" accesskey="p">
+            </li>
+        </ul>
 
+        <button>登录</button>
     </form>
 </body>
 
