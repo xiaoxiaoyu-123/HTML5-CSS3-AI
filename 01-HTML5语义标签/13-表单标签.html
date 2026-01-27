@@ -9,9 +9,12 @@
 
 <body>
 
-    <!-- 表单容器：主要作用是包裹所有的表单控件 -->
+    <!-- 表单容器：form,主要作用是包裹所有的表单控件 -->
+    <!-- 一、表单控件:input -->
     <form action="">
-        <!-- 表单控件input,1.单行文本框和密码框：type="text"和type="password" 
+        <!-- 1.单行文本框和密码框：
+            type="text"：单行文本框
+            type="password" :密码框
             placeholder:提示信息
             maxlength:允许的最大字符数
             accesskey:使元素获得焦点的快捷键
@@ -24,9 +27,68 @@
             <li>
                 密码：<input type="password" placeholder="请输入密码" name="password" maxlength="6" accesskey="p">
             </li>
+
+
+
+            <!--2.单选框和复选框
+            type="radio":单选框
+            type="checkbox":复选框
+            name:表单名称实现分组
+            value:表单值
+            checked:是否默认选中
+            -->
+            <li>
+                <input type="radio" name="gender" value="0" checked>女
+                <input type="radio" name="gender" value="1">男
+            </li>
+            <li>
+                <input type="checkbox" name="hobby" value="0">篮球
+                <input type="checkbox" name="hobby" value="1">足球
+                <input type="checkbox" name="hobby" value="2" checked>网球
+            </li>
+
+
+
+            <!-- 3.文件上传：type="file"
+                multiple:是否可以选择多个文件
+                accept:指定文件类型，例如image/*,audio/*,video/*,application/pdf等
+            -->
+            <li>
+                头像：<input type="file" name="file" multiple accept="image/jpeg/png/gif/pdf">
+            </li>
+
+
+
+
+
+            <!-- 二、表单控件：textarea -->
+            <li>
+                留言：<textarea name="msg" cols="30" rows="5"></textarea>
+            </li>
+
+
+
+
+
+
+            <!-- 三、表单控件：select -->
+            <li>
+                城市：
+                <select name="country" id="">
+                    <option value="0">北京</option>
+                    <option value="1">上海</option>
+                    <option value="2">广州</option>
+                    <option value="2">深圳</option>
+                    <option value="2">成都</option>
+                </select>
+            </li>
         </ul>
 
+
         <button>登录</button>
+
+
+
     </form>
 </body>
 
