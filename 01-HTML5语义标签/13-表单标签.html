@@ -22,10 +22,14 @@
         -->
         <ul>
             <li>
-                账号：<input type="text" placeholder="请输入账号" name="username" accesskey="s" autocomplete="off">
+                <label>
+                    账号：<input type="text" placeholder="请输入账号" name="username" accesskey="s" autocomplete="off">
+                </label>
             </li>
             <li>
-                密码：<input type="password" placeholder="请输入密码" name="password" maxlength="6" accesskey="p">
+                <label>
+                    密码：<input type="password" placeholder="请输入密码" name="password" maxlength="6" accesskey="p">
+                </label>
             </li>
 
 
@@ -38,13 +42,23 @@
             checked:是否默认选中
             -->
             <li>
-                <input type="radio" name="gender" value="0" checked>女
-                <input type="radio" name="gender" value="1">男
+                <label>
+                    <input type="radio" name="gender" value="0" checked>女
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="1">男
+                </label>
             </li>
             <li>
-                <input type="checkbox" name="hobby" value="0">篮球
-                <input type="checkbox" name="hobby" value="1">足球
-                <input type="checkbox" name="hobby" value="2" checked>网球
+                <label>
+                    <input type="checkbox" name="hobby" value="1">足球
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" value="2" checked>网球
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" value="3">篮球
+                </label>
             </li>
 
 
@@ -54,40 +68,66 @@
                 accept:指定文件类型，例如image/*,audio/*,video/*,application/pdf等
             -->
             <li>
-                头像：<input type="file" name="file" multiple accept="image/jpeg/png/gif/pdf">
+                <label>
+                    头像：<input type="file" name="file" multiple accept="image/jpeg/png/gif/pdf">
+                </label>
             </li>
 
 
 
 
-
-            <!-- 二、表单控件：textarea -->
+            <!-- 二、表单控件：textarea 
+                name:表单名称
+                cols:文本列数，正整数，默认20
+                rows:文本行数，正整数，默认2
+                -->
             <li>
-                留言：<textarea name="msg" cols="30" rows="5"></textarea>
+                <label>
+                    留言：<textarea name="msg" cols="30" rows="5"></textarea>
+                </label>
             </li>
 
 
 
 
-
-
-            <!-- 三、表单控件：select -->
+            <!-- 三、表单控件：select 
+                option:选项
+                value:选项值
+                selected:是否默认选中W
+                name:表单名称
+                multiple:是否可以选择多个选项
+                size:显示的选项行数，正整数，默认1
+                -->
             <li>
-                城市：
-                <select name="country" id="">
-                    <option value="0">北京</option>
-                    <option value="1">上海</option>
-                    <option value="2">广州</option>
-                    <option value="2">深圳</option>
-                    <option value="2">成都</option>
-                </select>
+                <label>
+                    城市：
+                    <select name="country" id="">
+                        <option value="0">北京</option>
+                        <option value="1" selected>上海</option>
+                        <option value="2">广州</option>
+                        <option value="3">深圳</option>
+                        <option value="4">成都</option>
+                    </select>
+                </label>
             </li>
+
+
+
+
+            <!-- 四、表单控件：button 
+                type="submit":提交按钮
+                type="reset":重置按钮
+                type="button":普通按钮
+                value:按钮显示的文本
+                disabled:是否禁用按钮
+                -->
+            <li>
+                <button type="submit" value="提交">提交</button>
+                <button type="reset" value="重置">重置</button>
+                <button type="button" value="普通按钮" disabled>普通按钮</button>
+            </li>
+
         </ul>
-
-
-        <button>登录</button>
-
-
 
     </form>
 </body>
