@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>类型选择器以及注释</title>
+    <style>
+        /* 类型选择器：根据HTML元素的类型来选择元素 */
+        p {
+            color: red;
+        }
+
+        div {
+            color: blue;
+        }
+
+        span {
+            color: green;
+        }
+        /* 就近原则  重叠性 */
+        div {
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>类型选择器</h2>
+    <p>这是一个段落。</p>
+    <div>这是一个div元素。</div>
+    <span>这是一个span元素。</span>
+</body>
+
+</html>

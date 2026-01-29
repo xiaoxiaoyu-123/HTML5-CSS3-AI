@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>内联和内部样式表</title>
+    <link rel="stylesheet" href="./css/外部样式表测试.css">
+    <style>
+        /* 内部样式表：在HTML文档的<head>标签中使用<style>标签定义样式 */
+        div {
+            color: blue;
+            font-size: 16px;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <h2>内联样式表</h2>
+    <!-- 内联样式表：直接在HTML标签中使用style属性定义样式 -->
+    <p style="color: red; font-size: 14px;">这是一个红色的段落。</p>
+    <!-- 内部样式表：在HTML文档的<head>标签中使用<style>标签定义样式，优先级次于内联样式表。 -->
+    <div>这是一个蓝色的段落。</div>
+    <!-- 外部样式表：将样式定义在外部的CSS文件中，通过<link>标签引入，优先级最低。 -->
+    <span>这是一个绿色的段落。</span>
+
+    <!-- 总结：
+    内联样式表：直接在HTML标签中使用style属性定义样式，优先级最高。
+    内部样式表：在HTML文档的<head>标签中使用<style>标签定义样式，优先级次于内联样式表。
+    外部样式表：将样式定义在外部的CSS文件中，通过<link>标签引入，优先级最低。
+    -->
 </body>
+
 </html>
