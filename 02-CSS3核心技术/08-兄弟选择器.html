@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>兄弟选择器</title>
+</head>
+<style>
+    /* 邻接兄弟选择器：选择指定元素后面的第一个兄弟元素 */
+    h2+p {
+        color: pink;
+    }
+
+    /* 通用兄弟选择器：选择指定元素后面的所有兄弟元素 */
+    h3~p {
+        color: skyblue;
+    }
+</style>
+
+<body>
+    <h2>邻接兄弟选择器</h2>
+    <p>这是一个段落。</p>
+    <p>这是一个段落。</p>
+
+    <h3>通用兄弟选择器</h3>
+    <p>这是一个段落。</p>
+    <p>这是一个段落。</p>
+    <p>这是一个段落。</p>
+</body>
+
+</html>
