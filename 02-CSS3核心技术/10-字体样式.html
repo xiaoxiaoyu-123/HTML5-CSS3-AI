@@ -8,10 +8,147 @@
 </head>
 
 <style>
-    
+    /* 1.字体颜色 */
+
+    .pink {
+        color: pink;
+    }
+
+    .color16 {
+        color: #ff0000;
+    }
+
+    .rgba {
+        color: rgba(78, 243, 60, 0.8);
+    }
+
+    .hsl {
+        color: hsl(120, 100%, 50%);
+    }
+
+
+    /* 2.字体族 */
+    .font-family {
+        font-family: "宋体", "微软雅黑", "Arial", sans-serif;
+    }
+
+
+    /* 3.字体大小 */
+    .font-size {
+        font-size: 24px;
+    }
+
+    .font-size-rem {
+        font-size: 2rem;
+    }
+
+    .font-size-percent {
+        font-size: 200%;
+    }
+
+    .font-size-em {
+        font-size: 2em;
+    }
+
+
+    /* 4.字体粗细 */
+    .font-weight {
+        font-weight: bold;
+    }
+
+    .font-weight-400 {
+        font-weight: 400;
+    }
+
+    .font-weight-700 {
+        font-weight: 700;
+    }
+
+
+    /* 5.字体风格 */
+    .font-style-italic {
+        font-style: italic;
+    }
+
+    .font-style-normal {
+        font-style: normal;
+    }
+
+
+    /* 6.字体装饰 */
+    /* 下划线 */
+    .font-decoration-underline {
+        text-decoration: underline;
+    }
+
+    /* 删除线 */
+    .font-decoration-line-through {
+        text-decoration: line-through;
+    }
+
+    /* 上划线 */
+    .font-decoration-overline {
+        text-decoration: overline;
+    }
+
+    /* 取消字体装饰 */
+    .font-decoration-none {
+        text-decoration: none;
+    }
 </style>
+
 <body>
 
+    <!-- 字体样式 -->
+
+    <!-- 1.字体颜色 -->
+    <h2>字体颜色</h2>
+    <p class="pink">字体颜色可以使用颜色名称设置</p>
+    <p class="color16">字体颜色可以使用十六进制颜色值设置</p>
+    <p class="rgba">字体颜色可以使用rgb或者rgba颜色值设置</p>
+    <p class="hsl">字体颜色可以使用hsl或者hsla颜色值设置</p>
+    <p>hsl颜色值由色相、饱和度和亮度组成，每个值的范围是0-360、0-100%、0-100%</p>
+    <p>hsla颜色值在hsl基础上添加了透明度通道，透明度值的范围是0-1</p>
+    <p>字体可以半透明</p>
+
+    <!-- 2.字体族 -->
+    <h2>字体族</h2>
+    <p class="font-family">字体族可以使用字体名称设置</p>
+    <p>字体族可以使用字体名称设置，例如宋体、微软雅黑、Arial等</p>
+    <p>字体族可以使用字体名称的组合设置，例如宋体、微软雅黑、Arial等</p>
+    <p>字体族可以使用字体名称的组合设置，例如宋体、微软雅黑、Arial等</p>
+
+    <!-- 3.字体大小 -->
+    <h2>字体大小</h2>
+    <p class="font-size">字体大小可以使用像素值px设置</p>
+    <p class="font-size-rem">字体大小可以使用rem单位设置</p>
+    <p>rem单位是相对于根元素（html）的字体大小的单位，例如1rem等于根元素的字体大小，2rem等于根元素字体大小的两倍</p>
+    <p>rem单位可以用于设置元素的字体大小，也可以用于设置元素的内边距、外边距等</p>
+    <p class="font-size-percent">字体大小可以使用百分比值设置</p>
+    <p class="font-size-em">字体大小可以使用em值设置</p>
+    <p>em值是相对于父元素的字体大小的单位，例如1em等于父元素的字体大小，2em等于父元素字体大小的两倍</p>
+    <p>em值可以用于设置元素的字体大小，也可以用于设置元素的内边距、外边距等</p>
+
+    <!-- 4.字体粗细 -->
+    <h2>字体粗细</h2>
+    <p class="font-weight">字体粗细可以使用字体重量值设置</p>
+    <p class="font-weight-400">字体重量值的范围是100-900，100是最细的字体，900是最粗的字体</p>
+    <p>字体粗细可以使用字体重量值设置，例如font-weight: 400;</p>
+    <p class="font-weight-700">字体粗细可以使用字体重量值设置，例如font-weight: 700;</p>
+
+    <!-- 5.字体风格 -->
+    <h2>字体风格</h2>
+    <p class="font-style-italic">字体风格可以使用italic（斜体）设置</p>
+    <p class="font-style-normal">字体风格可以使用normal（正常）设置</p>
+
+    <!-- 6.字体装饰 -->
+    <h2>字体装饰</h2>
+    <p class="font-decoration-underline">字体装饰可以使用underline（下划线）设置</p>
+    <p class="font-decoration-line-through">字体装饰可以使用line-through（删除线）设置</p>
+    <p class="font-decoration-overline">字体装饰可以使用overline（上划线）设置</p>
+    <p class="font-decoration-none">字体装饰可以使用none（取消装饰）设置</p>
+    
 </body>
+
 
 </html>
