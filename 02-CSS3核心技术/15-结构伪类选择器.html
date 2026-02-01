@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结构伪类选择器</title>
+    <style>
+        .ul1 li:first-child {
+            color: pink;
+            /* 选择ul下的第一个li元素的字体颜色为粉色 */
+        }
+
+        .ul1 li:last-child {
+            color: skyblue;
+            /* 选择ul下的最后一个li元素的字体颜色为天蓝色 */
+        }
+
+        .ul1 li:nth-child(3n) {
+            color: green;
+            /* 选择ul下的第3、6、9...个li元素的字体颜色为绿色 */
+        }
+
+        .ul1 li:nth-child(5) {
+            color: #d5ec24;
+            /* 选择ul下的第5个li元素的字体颜色为黄色 */
+        }
+
+
+        /* 选择前7个li元素 */
+        .ul2 li:nth-child(-n+7) {
+            color: #821ce8;
+            /* 选择ul下的前7个li元素的字体颜色为紫色 */
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="ul1">
+        <li>列表项1</li>
+        <li>列表项2</li>
+        <li>列表项3</li>
+        <li>列表项4</li>
+        <li>列表项5</li>
+        <li>列表项6</li>
+        <li>列表项7</li>
+        <li>列表项8</li>
+        <li>列表项9</li>
+        <li>列表项10</li>
+    </ul>
+
+    <br>
+
+    <ul class="ul2">
+        <li>列表项1</li>
+        <li>列表项2</li>
+        <li>列表项3</li>
+        <li>列表项4</li>
+        <li>列表项5</li>
+        <li>列表项6</li>
+        <li>列表项7</li>
+        <li>列表项8</li>
+        <li>列表项9</li>
+        <li>列表项10</li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户行为伪类选择器</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        /* 鼠标悬停在元素上 */
+        .box:hover {
+            background-color: red;
+        }
+
+        /* 获得焦点时 */
+        .search {
+            width: 100px;
+            height: 20px;
+            transition-duration: .5s;
+        }
+
+        .search:focus {
+            width: 200px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">文字</div>
+    <input type="text" class="search">
+    
+</body>
+
+</html>

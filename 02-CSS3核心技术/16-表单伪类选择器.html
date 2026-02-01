@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单伪类选择器</title>
+    <style>
+        /* 按钮的背景颜色 #ff6900 */
+        button {
+            width: 150px;
+            height: 40px;
+            background-color: #ff6900;
+            border: none;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        /* 表单禁用伪类选择器 */
+        button:disabled {
+            opacity: 0.4;
+        }
+    </style>
+</head>
+
+<body>
+    <button disabled>注册</button>
+    <br>
+    <input type="checkbox" id="agree">
+    <label for="agree">同意注册协议</label>
+</body>
+
+</html>
