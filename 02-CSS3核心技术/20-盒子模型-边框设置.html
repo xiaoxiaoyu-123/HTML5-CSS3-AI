@@ -6,12 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>盒子模型-边框设置</title>
     <style>
+        div[class^="box"] {
+            width: 200px;
+            height: 100px;
+            margin-bottom: 20px;
+        }
 
+        /* 实线边框 */
+        .box1 {
+            border: 1px solid black;
+        }
+
+        /* 虚线边框 */
+        .box2 {
+            border: 1px dashed black;
+        }
+
+        /* 点线边框 */
+        .box3 {
+            border: 1px dotted black;
+        }
+
+        /* border属性由于设置盒子边框。
+        使用场景：
+        1.四个边框不同
+        2.底部做一条线做分割线
+        属性：根据方位名词，top、right、bottom、left
+        取值：边框宽度 边框样式 边框颜色
+         */
+        /* 示例 */
+        .box4 {
+            border-top: 2px solid red;
+            border-right: 2px dotted green;
+            border-bottom: 2px dashed blue;
+            border-left: 2px dotted yellow;
+        }
+
+        .box5 {
+            border: 1px solid #d9e0ee;
+            border-top: 3px solid #ff8400;
+        }
     </style>
 </head>
 
 <body>
-
+    <div class="box1">实线边框</div>
+    <div class="box2">虚线边框</div>
+    <div class="box3">点线边框</div>
+    <div class="box4">不同边框1</div>
+    <div class="box5">不同边框2</div>
+    <h2>单边框</h2>
 </body>
 
 </html>

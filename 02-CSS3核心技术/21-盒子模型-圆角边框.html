@@ -6,12 +6,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>盒子模型-圆角边框</title>
     <style>
+        /* 正方形 */
+        .radius1 {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            border-radius: 50%;
+        }
 
+        /* 矩形 */
+        .radius2 {
+            width: 200px;
+            height: 80px;
+            background-color: pink;
+            border-radius: 10px;
+        }
+
+        /* 胶囊按钮 */
+        .radius3 {
+            margin-top: 20px;
+            width: 200px;
+            height: 40px;
+            background-color: skyblue;
+            border-radius: 20px;
+            /* 胶囊按钮设置圆角为宽度或高度(较小值的那一个)的一半，就可以实现胶囊形状 */
+        }
+
+        .radius4 {
+            margin-top: 20px;
+            width: 40px;
+            height: 200px;
+            background-color: skyblue;
+            border-radius: 20px;
+
+        }
+
+
+        /*border-radius:左上角 右上角 右下角 左下角 
+        记忆口诀:
+        1.顺时针方向
+        2.中间空格隔开
+        3.不需要圆角的设置为0即可
+         */
+
+        /* 一个值：所有角都有相同的圆角半径 */
+        .radius5 {
+            margin-top: 20px;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            border-radius: 10px;
+        }
+
+        /* 两个值：分别对应左上角和右上角、左下角和右下角 */
+        .radius6 {
+            margin-top: 20px;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            border-radius: 10px 20px;
+        }
+
+        /* 三个值：分别对应左上角、右上角和右下角、左下角 */
+        .radius7 {
+            margin-top: 20px;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            border-radius: 10px 20px 30px;
+        }
+
+        /* 四个值：分别对应左上角、右上角、右下角、左下角 */
+        .radius8 {
+            margin-top: 20px;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            border-radius: 10px 20px 30px 40px;
+        }
     </style>
 </head>
 
 <body>
-
+    <div class="radius1">圆形</div>
+    <div class="radius2"></div>
+    <div class="radius3">胶囊按钮1 </div>
+    <div class="radius4">胶囊按钮2</div>
+    <div class="radius5">一个值</div>
+    <div class="radius6">两个值</div>
+    <div class="radius7">三个值</div>
+    <div class="radius8">四个值</div>
 </body>
 
 </html>
