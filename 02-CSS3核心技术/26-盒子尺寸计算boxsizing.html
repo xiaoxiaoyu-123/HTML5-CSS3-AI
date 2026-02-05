@@ -6,12 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>盒子模型-尺寸计算</title>
     <style>
+        /* 盒子尺寸计算：
+        1.标准盒子模型：width+padding+border+margin=盒子宽度
+        2.怪异盒子模型：width+margin=盒子宽度
+        */
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            padding: 50px;
+            border: 10px solid red;
+            margin: 100px;
+        }
 
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            padding: 50px;
+            border: 10px solid red;
+            margin: 100px;
+            box-sizing: border-box;
+        }
+
+        /* 语法box-sizing: 属性值;
+        1. content-box：标准盒子模型（默认值）：元素的width和height属性值只包含内容区域的宽度和高度，不包含内边距、边框和外边距。
+        2. border-box：怪异盒子模型：盒子内容宽度=width，盒子内容高度=height
+         */
     </style>
 </head>
 
 <body>
-
+    <div class="box">
+        这是一个盒子
+    </div>
+    <div class="box1">
+        这是一个盒子，内边距和边框都包含在宽度和高度内，不会撑大盒子
+    </div>
 </body>
 
 </html>

@@ -6,12 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>盒子模型-外边距合并和塌陷</title>
     <style>
+        /* 嵌套关系外边距塌陷问题 */
+        .father {
+            width: 300px;
+            height: 300px;
+            background-color: greenyellow;
+            /* 解决外边距塌陷问题:
+            1.设置overflow为hidden.
+            2.给父元素加边框线。
+            3.给父元素加内边距。
+             */
+            overflow: hidden;
+            /* border: 3px solid pink; */
+            /* padding: 100px; */
+        }
 
+        .son {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            margin-top: 100px;
+        }
     </style>
 </head>
 
 <body>
-
+    <div class="father">
+        <div class="son"></div>
+    </div>
 </body>
 
 </html>

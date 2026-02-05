@@ -6,12 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>盒子模型-盒子背景</title>
     <style>
+        /* background用于设置元素背景属性，包括背景颜色、背景图片、背景重复方式、背景位置等 
+        1.background-color：设置背景颜色。常用值：颜色值（如red、#ff0000、rgb(255,0,0)）、transparent（透明）
+        2.background-image：设置背景图片。常用值：图片路径（如url('image.jpg')）、none（无背景图片）
+        3.background-repeat：设置背景图片是否重复。常用值：repeat、no-repeat、repeat-x、repeat-y
+        4.background-position：定位背景图片位置。常用值：top、bottom、left、right、center、百分比（如50% 50%）
+        5.background-size：设置背景图片尺寸。常用值：默认auto、cover(覆盖)、contain(包含)或者跟px、%。
+        6.background-attachment：设置背景图片是否固定在视口上，不滚动。常用值：scroll（滚动）、fixed（固定）
+        */
+        body {
+            /* background-color: #ccc;
+            width: 1500px; */
+            height: 1500px;
+        }
 
+        .box {
+            width: 400px;
+            height: 400px;
+            /* background-color: pink; */
+            /* 背景图片 */
+            /* background-image: url(./img/ldh.png); */
+
+            /* 背景平铺 */
+            /* background-repeat: no-repeat; */
+            /* background-repeat: repeat; */
+            /* background-repeat: repeat-x; */
+            /* background-repeat: repeat-y; */
+
+            /* 背景位置 */
+            /* background-position: x y; px*/
+            /* background-position: 10px 10px; */
+            /* background-position: % %; 百分比*/
+            /* background-position: 50% 50%; */
+            /* background-position: top top; 方位名词：top、bottom、left、right、center*/
+            /* background-position: right bottom; */
+            /* 若只写一个方位名词，另一个方位名词默认center */
+            /* background-position: right; */
+
+            /* 背景缩放 */
+            /* contain：包含。   cover:覆盖，背景图片会完整显示在盒子内，可能会被裁剪。*/
+            /* background-size: contain; */
+            /* background-size: cover; */
+            /* background-size: px px; */
+            /* background-size: 300px 300px; */
+
+            /* 背景固定 */
+            /* bacground-attachment属性值：scroll（滚动）、fixed（固定），fixed是相对于视口固定，不滚动 */
+            /* background-attachment: fixed; */
+
+            /* 复合写法
+            background:背景颜色 背景图片 背景重复方式 背景位置/背景缩放
+            */
+            background: pink url(./img/ldh.png) no-repeat 50% 50%/300px;
+        }
     </style>
 </head>
 
 <body>
-
+    <div class="box">123</div>
 </body>
 
 </html>
