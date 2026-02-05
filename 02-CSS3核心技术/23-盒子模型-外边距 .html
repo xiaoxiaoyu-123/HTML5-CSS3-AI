@@ -17,9 +17,16 @@
         }
 
         span {
+            /* 行内盒子的宽高无效 */
             width: 100px;
             height: 100px;
             background-color: pink;
+            /* 行内盒子上下外边距无效，左右外边距有效 */
+            margin: 50px 50px;
+            /* 行内盒子的内边距有效 */
+            padding: 20px 20px;
+            /* 行内盒子的边框有效 */
+            border: 10px solid red;
         }
     </style>
 </head>
