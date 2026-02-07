@@ -6,12 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>盒子模型-背景渐变</title>
     <style>
+        /* 在CSS3中，可以通过linear-gradient(线性渐变)和radial-gradient(径向渐变)为元素添加渐变背景 
+        1.linear-gradient(方向,颜色1 位置，颜色2 位置)      线性渐变(方向可控)  方向可以是方位名词，也可以是deg(角度)
+        2.radial-gradient(形状，颜色1，颜色2...)        径向渐变(形状和位置可控)    
+        */
+        .box1 {
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(120deg, pink 32%, skyblue 100%);
+        }
 
+        .box2 {
+            width: 300px;
+            height: 300px;
+            margin-top: 20px;
+            background: linear-gradient(to right, pink 32%, skyblue 100%);
+        }
+
+        .box3 {
+            width: 300px;
+            height: 300px;
+            margin-top: 20px;
+            background: radial-gradient(circle, pink 32%, skyblue 100%);
+        }
+
+        .text {
+            font-size: 30px;
+            font-weight: 700;
+            /* 渐变背景颜色 */
+            background-image: linear-gradient(97deg, #0096ff, #bb64ff 42%, #f2416b 74%, #eb7500);
+            /* webkit前缀：为了兼容旧版谷歌浏览器    */
+            -webkit-background-clip: text;
+            /* 背景裁剪：以文字的形式裁剪 */
+            background-clip: text;
+            /* 文本填充颜色：透明 */
+            -webkit-text-fill-color: transparent;
+
+
+        }
     </style>
 </head>
 
 <body>
-
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="text">我是渐变的文字，喜欢吗？</div>
 </body>
 
 </html>

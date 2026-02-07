@@ -6,12 +6,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>盒子模型-综合案例-淘宝侧边栏</title>
     <style>
+        /* 清除所有元素的默认边距和内边距 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        a {
+            text-decoration: none;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        /* 侧边栏模块 */
+        .service {
+            width: 256px;
+            height: 400px;
+            background-color: #f7f7f7;
+            border-radius: 12px;
+            color: #1f1f1f;
+            margin: 100px auto;
+        }
+
+        .service-title {
+            padding: 8px 0 0 16px;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 32px;
+        }
+
+        .service-title img {
+            width: 60px;
+            height: 20px;
+        }
+
+        .service-bd ul li {
+            height: 32px;
+            line-height: 32px;
+            margin: 0 8px;
+            border-radius: 4px;
+            transition: all 0.5s;
+        }
+
+        .service-bd ul li:hover {
+            background-color: #fff;
+        }
+
+        .service-bd ul li a {
+
+            font-size: 14px;
+            color: #1f1f1f;
+        }
+
+        .service-bd ul li a:hover {
+            color: #ff5000;
+        }
     </style>
 </head>
 
 <body>
-
+    <div class="service">
+        <!-- 分类模块 -->
+        <div class="service-title">
+            <span>分类</span>
+            <img src="./img/888.gif" alt="">
+        </div>
+        <!-- 主体部分 -->
+        <div class="service-bd">
+            <ul>
+                <li>
+                    <a href="#">电脑</a>
+                    <a href="#">配件</a>
+                    <a href="#">办公</a>
+                    <a href="#">文具</a>
+                </li>
+                <li>
+                    <a href="#">电脑</a>
+                    <a href="#">配件</a>
+                    <a href="#">办公</a>
+                    <a href="#">文具</a>
+                </li>
+                <li>
+                    <a href="#">电脑</a>
+                    <a href="#">配件</a>
+                    <a href="#">办公</a>
+                    <a href="#">文具</a>
+                </li>
+                <li>
+                    <a href="#">电脑</a>
+                    <a href="#">配件</a>
+                    <a href="#">办公</a>
+                    <a href="#">文具</a>
+                </li>
+                <li>
+                    <a href="#">电脑</a>
+                    <a href="#">配件</a>
+                    <a href="#">办公</a>
+                    <a href="#">文具</a>
+                </li>
+                <li>
+                    <a href="#">电脑</a>
+                    <a href="#">配件</a>
+                    <a href="#">办公</a>
+                    <a href="#">文具</a>
+                </li>
+                <li>
+                    <a href="#">电脑</a>
+                    <a href="#">配件</a>
+                    <a href="#">办公</a>
+                    <a href="#">文具</a>
+                </li>
+                <li>
+                    <a href="#">电脑</a>
+                    <a href="#">配件</a>
+                    <a href="#">办公</a>
+                    <a href="#">文具</a>
+                </li>
+                <li>
+                    <a href="#">电脑</a>
+                    <a href="#">配件</a>
+                    <a href="#">办公</a>
+                    <a href="#">文具</a>
+                </li>
+                <li>
+                    <a href="#">电脑</a>
+                    <a href="#">配件</a>
+                    <a href="#">办公</a>
+                    <a href="#">文具</a>
+                </li>
+                <li>
+                    <a href="#">电脑</a>
+                    <a href="#">配件</a>
+                    <a href="#">办公</a>
+                    <a href="#">文具</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
 
 </html>

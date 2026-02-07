@@ -6,12 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>多行文本显示省略号</title>
     <style>
+        /* 单行文字溢出显示省略号：
+        text-overflow: ellipsis; 文字溢出显示省略号
+        white-space: nowrap; 强制文字一行显示，不换行
+        overflow: hidden; 元素溢出时隐藏
+        */
 
+        /* 多行文字溢出显示省略号
+        display: -webkit-box;              旧版弹性盒子布局
+        -webkit-line-clamp: 2;             限制显示行数
+        -webkit-box-orient: vertical;      文字垂直排列
+        overflow: hidden;                  隐藏溢出内容
+        text-overflow: ellipsis;           文本溢出显示省略号
+        */
+        .ellipsis {
+            width: 300px;
+            height: 50px;
+            background-color: pink;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
     </style>
 </head>
 
 <body>
-
+    <p class="ellipsis">
+        这是一个多行文字溢出显示省略号的段落。
+        这是一个多行文字溢出显示省略号的段落。
+        这是一个多行文字溢出显示省略号的段落。
+    </p>
 </body>
 
 </html>

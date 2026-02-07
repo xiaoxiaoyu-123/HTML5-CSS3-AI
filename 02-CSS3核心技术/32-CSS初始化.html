@@ -5,13 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS初始化</title>
+    <!-- 引入Normalize.css文件 -->
+    <!-- <link rel="stylesheet" href="normalize.css"> -->
     <style>
+        /* 初始化核心目的：
+        1.统一浏览器默认样式 ，消除差异
+        2.减少后续开发中冗余代码
+        3.提高代码可维护性
+        */
 
+        /* 小型项目（小白练手） */
+        * {
+            /* 清除所有元素的默认外边距 margin*/
+            margin: 0;
+            /* 清除所有元素的默认内边距 padding*/
+            padding: 0;
+            /*同时设置盒模型 */
+            box-sizing: border-box;
+        }
+
+        /* 重置列表样式 */
+        ul,
+        ol {
+            /* 去掉列表前的默认符号 */
+            list-style: none;
+        }
+
+        /* 重置链接样式 */
+        a {
+            /* 去掉超链接下划线 */
+            text-decoration: none;
+        }
+
+        /* 清除input默认轮廓线 */
+        input,
+        button {
+            outline: none;
+        }
+
+
+
+        /* 中大型项目：推荐Normalize.css 
+        引入Normalize.css文件
+        link rel="stylesheet" href="normalize.css"
+        官网下载地址：https://necolas.github.io/normalize.css/
+        比如vue官网就引入了Normalize.css
+        */
     </style>
 </head>
 
 <body>
-
+    <ul>
+        <li>列表项1</li>
+        <li>列表项2</li>
+    </ul>
 </body>
 
 </html>

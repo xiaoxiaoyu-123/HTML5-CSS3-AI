@@ -6,12 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>盒子模型-综合案例-小米卡片</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: pink;
+        }
+
+        .cart {
+            width: 234px;
+            height: 300px;
+            background-color: #fff;
+            margin: 100px auto;
+            text-align: center;
+        }
+
+        .cart img {
+            width: 160px;
+            height: 160px;
+            margin-top: 20px;
+
+        }
+
+        .cart .title {
+            font-size: 14px;
+            /* font-weight:400; */
+        }
+
+        .cart .desc {
+            font-size: 12px;
+            color: #b0b0b0;
+            margin-top: 5px;
+            padding: 0 15px;
+            /* 单行文本溢出省略号 */
+            /* 溢出隐藏 */
+            overflow: hidden;
+            /* 文本溢出显示省略号 */
+            text-overflow: ellipsis;
+            /* 强制文字一行显示，不换行 */
+            white-space: nowrap;
+        }
+
+        .cart .price {
+            font-size: 14px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .cart .price span {
+            color: #ff6700;
+        }
+
+        .cart .price del {
+            color: #b0b0b0;
+        }
     </style>
 </head>
 
 <body>
-
+    <div class="cart">
+        <img src="./img/mi.webp" alt="">
+        <h3 class="title">Xiaomi Buds5</h3>
+        <p class="desc">舒适无感佩戴 | 高通全链路无损音频 | 哈曼 AudioEFX 联合调音</p>
+        <p class="price">
+            <span>659元</span>
+            <del>699元</del>
+        </p>
+    </div>
 </body>
 
 </html>

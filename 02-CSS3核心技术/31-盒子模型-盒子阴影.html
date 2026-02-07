@@ -6,12 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>盒子模型-盒子阴影</title>
     <style>
+        /* 盒子阴影 */
+        /* 语法：box-shadow: X水平偏移 Y垂直偏移 模糊半径 扩散半径  阴影颜色; 
+        1. X水平偏移：正值向右偏移，负值向左偏移
+        2. Y垂直偏移：正值向下偏移，负值向上偏移
+        3. 模糊半径：值越大，阴影越模糊
+        4. 扩散半径：值越大，阴影越大
+        5. 阴影颜色：可以是颜色值，也可以是透明值
+        */
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* box-shadow: 5px 5px 20px 2px rgba(0, 0, 0, 0.5); */
+            /* 内阴影：将inset关键字添加到box-shadow属性值的开头 */
+            /* box-shadow: inset 5px 5px 20px 20px rgba(0, 0, 0, 0.5); */
 
+            /* 过度
+            语法：transition: 属性 时间 曲线;
+            1. 属性：要过渡的属性，all表示所有属性
+            2. 时间：过渡时间，单位秒
+            3. 曲线：过渡曲线，ease-in-out表示先慢后快
+            */
+            transition: all 0.3s ease-in-out;
+        }
+
+        .box:hover {
+            width: 220px;
+            height: 220px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 15px 30px;
+        }
     </style>
 </head>
 
 <body>
-
+    <div class="box"></div>
 </body>
 
 </html>
