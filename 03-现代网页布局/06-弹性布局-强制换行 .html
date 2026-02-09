@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弹性布局-主轴对齐</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* flex-wrap控制是否强制换行
+        属性值:
+        1. nowrap 不换行（默认值）
+        2. wrap 换行
+        3. wrap-reverse 换行，但是第一行在下面
+        */
+        .box {
+            display: flex;
+            width: 830px;
+            flex-wrap: wrap;
+            border: 1px solid red;
+            margin: 30px auto;
+            justify-content: space-between;
+            /* align-items: center; */
+            align-items: space-between;
+
+        }
+
+        .box .item {
+            width: 200px;
+            height: 300px;
+            background-color: pink;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+        <!-- <div class="item">13</div> -->
+    </div>
+
+</body>
+
+</html>

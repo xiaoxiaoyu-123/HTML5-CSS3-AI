@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弹性布局-主轴对齐</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 改变主轴方向 */
+        .box {
+            display: flex;
+            /* 主轴方向改为垂直方向，默认是水平方向（row） */
+            flex-direction: column;
+            /* 主轴居中对齐 */
+            /* justify-content: center; */
+            /* 主轴两端对齐 */
+            justify-content: space-between;
+            /* 主轴平均分配 */
+            /* justify-content: space-evenly; */
+            /* 主轴-A--B--C- */
+            /* justify-content: space-around; */
+
+            /* 交叉轴居中对齐 */
+            align-items: center;
+            width: 500px;
+            height: 500px;
+            border: 1px solid red;
+        }
+
+        .box .item {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+</body>
+
+</html>

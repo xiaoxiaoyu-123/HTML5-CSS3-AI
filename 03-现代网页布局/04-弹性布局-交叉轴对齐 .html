@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弹性布局-主轴对齐</title>
+    <style>
+        /* 交叉轴对齐 */
+        .box {
+            display: flex;
+            width: 500px;
+            height: 500px;
+            border: 1px solid red;
+            /* 交叉轴居中对齐 */
+            align-items: center;
+            /* 交叉轴开始对齐（默认） */
+            /* align-items: flex-start; */
+            /* 交叉轴结束对齐 */
+            /* align-items: flex-end; */
+            /* 交叉轴拉伸 */
+            /* align-items: stretch; */
+
+            /* 主轴对齐 */
+            justify-content: space-between;
+
+        }
+
+        .box .item {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <!-- <div class="item">5</div> -->
+        <!-- <div class="item"></div> -->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弹性布局-主轴对齐</title>
+    <style>
+        /* 主轴的对齐方式
+            1. flex-start：默认值，项目向主轴的起始位置对齐。
+            2. flex-end：项目向主轴的结束位置对齐。
+            3. center：项目在主轴上居中对齐。
+            4. space-between：项目在主轴上均匀分布，第一个项目在起始位置，最后一个项目在结束位置。
+            5. space-around：项目在主轴上均匀分布，每个项目两侧的间距相等。
+            6. space-evenly：项目在主轴上均匀分布，每个项目之间的间距相等。
+            */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            display: flex;
+            /* 主轴的对齐方式 */
+            /* justify-content: flex-start; */
+            /* justify-content: flex-end; */
+            /* justify-content: center; */
+            /* 两端对齐 */
+            justify-content: space-between;
+            /*  */
+            /* justify-content: space-around; */
+            /* 平均分配 */
+            /* justify-content: space-evenly; */
+            width: 500px;
+            height: 100px;
+            border: 1px solid red;
+            margin: 100px auto;
+            /* padding: 0 10px; */
+        }
+
+        .box .item {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <!-- <div class="item">5</div> -->
+        <!-- <div class="item"></div> -->
+    </div>
+</body>
+
+</html>

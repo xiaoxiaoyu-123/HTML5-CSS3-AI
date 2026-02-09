@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弹性布局-主轴对齐</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            /* gap让子元素之间有间距，写到父元素上 */
+            gap: 20px;
+            display: flex;
+            width: 100%;
+            border: 1px solid red;
+            margin: 0 auto;
+        }
+
+        .box .item {
+            /* flex: 1; 让子元素等比例分配父元素的宽度 */
+            flex: 1;
+            width: 80px;
+            height: 100px;
+            background-color: pink;
+        }
+
+        .box .item:nth-child(odd) {
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+</body>
+
+</html>
