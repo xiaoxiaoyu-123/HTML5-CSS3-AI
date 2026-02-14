@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位布局-z-index层放次序</title>
+    <style>
+        .box img {
+            position: absolute;
+            transition: all 0.5s;
+        }
+
+        .tel1 {
+            left: 30px;
+            top: 30px;
+            z-index: 3;
+        }
+
+        .tel2 {
+            left: 60px;
+            top: 60px;
+            z-index: 2;
+        }
+
+        .tel3 {
+            left: 90px;
+            top: 90px;
+            z-index: 1;
+        }
+
+        .tel4 {
+            left: 120px;
+            top: 120px;
+        }
+
+        .box img:hover {
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <img src="./img/tel1.png" alt="" class="tel1">
+        <img src="./img/tel2.png" alt="" class="tel2">
+        <img src="./img/tel3.png" alt="" class="tel3">
+        <img src="./img/tel4.png" alt="" class="tel4">
+    </div>
+</body>
+
+</html>

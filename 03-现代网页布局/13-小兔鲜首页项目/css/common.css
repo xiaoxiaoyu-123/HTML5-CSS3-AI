@@ -52,11 +52,14 @@
 
 /* 1.2头部header部分 */
 .header {
+    position: sticky;
+    top: 0;
     display: flex;
     height: 132px;
     justify-content: space-between;
     align-items: center;
-    /* background-color: pink; */
+    background-color: #fff;
+    z-index: 999;
 }
 
 .header .logo {
@@ -100,6 +103,18 @@
     color: #5EB69C;
 }
 
+.search {
+    position: relative;
+}
+
+.search .icon-search {
+    position: absolute;
+    font-size: 16px;
+    color: rgb(153, 153, 153);
+    top: 11px;
+    left: 6px;
+}
+
 .search input {
     width: 170px;
     height: 40px;
@@ -110,6 +125,21 @@
 .search input::placeholder {
     font-size: 14px;
     color: #ccc;
+}
+
+.cart {
+    position: relative;
+}
+
+.cart span {
+    position: absolute;
+    top: 2px;
+    left: 22px;
+    background-color: #E26237;
+    color: #fff;
+    padding: 0px 8px;
+    border-radius: 7px;
+
 }
 
 .cart i {

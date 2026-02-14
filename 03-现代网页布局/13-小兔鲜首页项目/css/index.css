@@ -2,12 +2,18 @@
 
 /* entry模块 */
 .entry .w {
+    position: relative;
     height: 500px;
     background-color: #5EB69C;
-    background: url(../uploads/banner1.png) no-repeat;
+    /* background: url(../uploads/banner1.png) no-repeat; */
 }
 
 .category {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* 提高定位的层级 */
+    z-index: 100;
     width: 250px;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.42);
@@ -51,7 +57,56 @@
     color: #fff;
 }
 
+.entry .banner {
+    position: relative;
+}
 
+.banner .prev,
+.banner .next {
+    width: 40px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner .prev {
+    left: 250px;
+}
+
+.banner .next {
+    right: 0;
+}
+
+.banner .prev i,
+.banner .next i {
+    font-size: 35px;
+    color: #fff;
+    line-height: 60px;
+    text-align: center;
+}
+
+.entry .banner .circle {
+    display: flex;
+    gap: 16px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.entry .banner .circle li {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.50);
+}
+
+.entry .banner .circle li:hover {
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.50);
+    background-color: #fff;
+    transition: all 0.3s;
+}
 
 /* 新鲜好物、人气推荐模块  */
 .box-hd {
